@@ -2,6 +2,7 @@ body {
   background-color: #303030;
   color: white;
   font-family: "Lato", sans-serif;
+  margin: 0 !important;
 }
 .wrapper {
   width: 100%;
@@ -24,5 +25,66 @@ body {
   text-align: center;
   border-top: 1px solid #751b1b;
   border-bottom: 1px solid #751b1b;
-  height: 10px;
+  height: 40px;
+}
+.content {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  padding-top: 10px;
+}
+.socials {
+  width: 100%;
+  text-align: center;
+  background-color: #292929;
+}
+.socialdivs {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fb {
+  float: left;
+  width: 250px;
+  height: 155px;
+}
+.fb:hover {
+  background-color: #4686b3;
+}
+.yt {
+  float: left;
+  width: 250px;
+  height: 155px;
+}
+.yt:hover {
+  background-color: #d94348;
+}
+.tw {
+  float: left;
+  width: 250px;
+  height: 155px;
+}
+.tw:hover {
+  background-color: #3095d3;
+}
+.gplus {
+  float: left;
+  width: 250px;
+  height: 155px;
+}
+.gplus:hover {
+  background-color: #d95333;
+}
+.fotter {
+  text-align: center;
+  background-color: #ebe7e7;
+  padding: 30px;
+}
+.sticky {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
 }

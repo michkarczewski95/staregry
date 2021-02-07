@@ -13,6 +13,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     </head>
@@ -25,16 +26,33 @@
                  <div style="clear: both;"></div>
             </div>
         <div class="nav"></div>
-        <div class="content"></div>
+        <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat ligula id dui euismod cursus. Nulla nulla ligula, fringilla sed enim ut, tincidunt porttitor sem. Maecenas vestibulum scelerisque lorem. Aliquam vel justo ut lorem blandit auctor. Nullam non tincidunt tellus, in gravida elit. Nulla ultricies nisi eu fringilla placerat. Quisque vel orci lobortis, hendrerit quam mattis, bibendum nunc. Fusce sed quam sit amet sem fermentum auctor. Pellentesque ornare, mauris nec fringilla tempus, enim sem hendrerit nibh, quis pretium est neque vel justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin maximus eros quam, id congue lacus finibus non. Donec non urna hendrerit, condimentum odio in, mollis metus. Suspendisse ultricies tempus sem id malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam facilisis eros eu massa tincidunt venenatis.</p>
+
+          <p> Aliquam risus sapien, euismod eget erat quis, blandit tincidunt mi. Nam ullamcorper elit turpis, quis blandit mi volutpat ac. Vivamus auctor erat vitae orci pharetra eleifend semper blandit justo. Morbi eleifend lectus fermentum lectus blandit ultrices. Nunc dictum justo non sodales convallis. Aenean tincidunt massa sit amet magna pulvinar, vestibulum eleifend neque consectetur. Sed nec enim ligula. Nunc malesuada massa eget urna lacinia, in hendrerit nulla aliquet. Mauris venenatis auctor quam, quis lobortis nunc. Vestibulum et augue auctor, faucibus odio et, tempus odio. Curabitur porttitor lectus vel quam maximus, sit amet suscipit nulla condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean et facilisis felis.</p>
+          
+            <p>Quisque eget felis porta, vestibulum augue et, lacinia elit. Curabitur vitae velit in odio blandit condimentum eget vitae magna. Ut turpis lacus, venenatis ac ligula at, dignissim blandit felis. Vestibulum ut libero nec purus ullamcorper maximus. Morbi vestibulum ante at ipsum convallis ultricies. In sed mollis arcu. Pellentesque elit sapien, tempus quis magna at, sagittis mollis nibh. Sed nec blandit sapien. Nam id libero accumsan, egestas est eget, malesuada purus. Maecenas viverra arcu a pretium suscipit. Suspendisse condimentum tristique molestie. Sed eget diam fringilla diam accumsan gravida vitae nec justo. Suspendisse non felis turpis. Morbi sit amet turpis in nisi molestie aliquam nec eget elit.</p>
+          
+              <p>Vestibulum euismod imperdiet porta. Nunc et urna tellus. Quisque laoreet efficitur mi non faucibus. Praesent quis lacinia massa. Nam vestibulum posuere dolor vitae ullamcorper. Donec convallis, orci at hendrerit tincidunt, sem nibh dictum lorem, et tristique eros nibh fringilla ipsum. Maecenas sollicitudin eros sed dui consequat, vel rhoncus urna viverra. Nunc eget eleifend ipsum. Donec dignissim diam a metus suscipit fermentum.</p>
+          
+                <p>Vestibulum id aliquet purus, at finibus leo. Maecenas ac nisi purus. Nulla sodales tellus ut diam suscipit, eu aliquam mauris bibendum. Donec condimentum, nibh a lacinia porttitor, orci nibh vestibulum dui, quis cursus nunc ligula at ligula. Aliquam id rhoncus massa, nec commodo tortor. Etiam vitae ipsum malesuada, fringilla turpis at, mattis orci. Vivamus ac orci quam. Fusce vel nisi sed nisi vehicula pellentesque ac et nulla. Morbi nisl orci, dictum at urna non, facilisis vulputate nisi. Aenean vel tincidunt odio. Mauris mi tellus, venenatis et malesuada non, iaculis vitae neque.</p>
+
+                </div>
         <div class="socials">
         <div class="socialdivs">
-            <div class="fb"></div>
-            <div class="yt"></div>
-            <div class="tw"></div>
-            <div class="gplus"></div>
+            <div class="fb"><i class="icon-facebook-official"></i>
+            </div>
+            <div class="yt"><i class="icon-youtube"></i>
+            </div>
+            <div class="tw"><i class="icon-twitter-squared"></i>
+            </div>
+            <div class="gplus"><i class="icon-gplus"></i>
+              </div>
+              <div style="clear:both"></div>
         </div> 
-        <div class="footer"></div>  
         </div>
+       
+        <div class="footer"> retrogranie.com &copy; 2015 Thank you for your visit Mario! But our Princess is in another castle;)</div>  
+        
     
     
     
@@ -50,6 +68,31 @@
 
 
 
-
+    <script src="jquery-1.11.3.min"></script>
+	
+    <script>
+    
+      $(document).ready(function() {
+      var NavY = $('.nav').offset().top;
+       
+      var stickyNav = function(){
+      var ScrollY = $(window).scrollTop();
+          
+      if (ScrollY > NavY) { 
+        $('.nav').addClass('sticky');
+      } else {
+        $('.nav').removeClass('sticky'); 
+      }
+      };
+       
+      stickyNav();
+       
+      $(window).scroll(function() {
+        stickyNav();
+      });
+      });
+      
+    </script>
+    
     </body>
 </html>
